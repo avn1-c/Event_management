@@ -18,7 +18,7 @@ public class Attendees {
     private String email;
     private long num;
 
-    @ManyToMany(mappedBy = "attendeeSet")
+    @ManyToMany(mappedBy = "attendeeSet", cascade = CascadeType.ALL)
 //    @JoinTable(
 //            name = "event_attendees",
 //            joinColumns = @JoinColumn(name = "attendee_id"),
